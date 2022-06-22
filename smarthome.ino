@@ -1,7 +1,4 @@
 #include <Servo.h>
-
-//#include <MQ2.h>
-
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -127,7 +124,6 @@ int smokeDetectionLed = 40;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-//  mq2.begin();
   servo.attach(28);
   servo.write(118);
   pinMode(hallwayLightOne, OUTPUT);
